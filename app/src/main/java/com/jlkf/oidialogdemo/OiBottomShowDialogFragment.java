@@ -45,6 +45,7 @@ public class OiBottomShowDialogFragment extends DialogFragment{
         getDialog().getWindow().setAttributes(params);
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         getDialog().setCanceledOnTouchOutside(true);
+        // 有白色背景，加这句代码
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         return super.onCreateView(inflater, container, savedInstanceState);
